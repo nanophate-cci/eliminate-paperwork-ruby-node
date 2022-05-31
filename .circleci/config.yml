@@ -1,0 +1,10 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: naoyer/eliminate-paperwork-ruby-node:latest
+    steps:
+      - checkout
+      - run: node -v
+      - run: yarn -v
